@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9k-Fl-1gc">
-                                <state key="normal" title="Push me"/>
+                                <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tjo-CJ-aTl"/>
                                 </connections>
@@ -35,18 +35,40 @@
                                     <action selector="böttön2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WtO-Vw-d34"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIc-As-rPk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VF8-UX-OtB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7k-jM-4fP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Iz-Bh-dTV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5nm-bq-tF3" firstAttribute="top" secondItem="R9k-Fl-1gc" secondAttribute="bottom" constant="93" id="60S-Uw-kFP"/>
+                            <constraint firstItem="5nm-bq-tF3" firstAttribute="top" secondItem="R9k-Fl-1gc" secondAttribute="bottom" constant="45" id="60S-Uw-kFP"/>
                             <constraint firstItem="cJS-py-doi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Df-eP-Cwa"/>
+                            <constraint firstItem="fIc-As-rPk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZ4-9U-xj3"/>
+                            <constraint firstItem="fIc-As-rPk" firstAttribute="top" secondItem="5nm-bq-tF3" secondAttribute="bottom" constant="56.5" id="BDW-Af-lnD"/>
                             <constraint firstItem="cJS-py-doi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Bmw-Wt-LlT"/>
+                            <constraint firstItem="t7k-jM-4fP" firstAttribute="top" secondItem="fIc-As-rPk" secondAttribute="bottom" constant="27" id="Dfm-D0-aWK"/>
                             <constraint firstItem="cJS-py-doi" firstAttribute="centerX" secondItem="R9k-Fl-1gc" secondAttribute="centerX" id="Hob-49-iJb"/>
                             <constraint firstItem="5nm-bq-tF3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Os4-4r-oqI"/>
+                            <constraint firstItem="t7k-jM-4fP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VXp-3N-weS"/>
                             <constraint firstItem="R9k-Fl-1gc" firstAttribute="top" secondItem="cJS-py-doi" secondAttribute="bottom" constant="30" id="Xp6-pa-VEc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="fIc-As-rPk" id="WWy-ew-z4R"/>
+                        <outlet property="text2" destination="t7k-jM-4fP" id="hnE-uv-Sno"/>
                         <outlet property="theLabel" destination="cJS-py-doi" id="ODO-yz-twx"/>
                     </connections>
                 </viewController>
